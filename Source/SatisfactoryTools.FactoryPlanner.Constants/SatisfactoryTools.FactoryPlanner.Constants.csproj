@@ -7,8 +7,4 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SatisfactoryTools.FactoryPlanner.Data\SatisfactoryTools.FactoryPlanner.Data.csproj" />
-  </ItemGroup>
-
 </Project>
