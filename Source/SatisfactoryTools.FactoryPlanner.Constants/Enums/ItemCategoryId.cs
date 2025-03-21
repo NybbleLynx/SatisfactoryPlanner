@@ -1,6 +1,6 @@
 ﻿namespace SatisfactoryTools.FactoryPlanner.Constants.Enums
 {
-    public enum ItemCategoryValue
+    public enum ItemCategoryId
     {
         RawResource = 1,
         Liquid,

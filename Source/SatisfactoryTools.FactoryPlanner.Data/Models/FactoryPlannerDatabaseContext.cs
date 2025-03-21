@@ -27,21 +27,21 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
             {
                 new()
                 {
-                    Id = (int) ResourcePurityValue.Impure,
+                    Id = (int) NodePurityId.Impure,
                     Name = "Impure",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ResourcePurityValue.Normal,
+                    Id = (int) NodePurityId.Normal,
                     Name = "Normal",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ResourcePurityValue.Pure,
+                    Id = (int) NodePurityId.Pure,
                     Name = "Pure",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
@@ -56,77 +56,77 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
             {
                 new()
                 {
-                    Id = (int) ItemCategoryValue.RawResource,
+                    Id = (int) ItemCategoryId.RawResource,
                     Name = "Raw Resource",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Liquid,
+                    Id = (int) ItemCategoryId.Liquid,
                     Name = "Liquid",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Gas,
+                    Id = (int) ItemCategoryId.Gas,
                     Name = "Gas",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Fuel,
+                    Id = (int) ItemCategoryId.Fuel,
                     Name = "Fuel",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Component,
+                    Id = (int) ItemCategoryId.Component,
                     Name = "Component",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Equipment,
+                    Id = (int) ItemCategoryId.Equipment,
                     Name = "Equipment",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Collectible,
+                    Id = (int) ItemCategoryId.Collectible,
                     Name = "Collectible",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Flora,
+                    Id = (int) ItemCategoryId.Flora,
                     Name = "Flora",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Fauna,
+                    Id = (int) ItemCategoryId.Fauna,
                     Name = "Fauna",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.HolidayEvent,
+                    Id = (int) ItemCategoryId.HolidayEvent,
                     Name = "Holiday Event",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) ItemCategoryValue.Misc,
+                    Id = (int) ItemCategoryId.Misc,
                     Name = "Miscellaneous",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
@@ -141,127 +141,106 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
             {
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Special,
+                    Id = (int) BuildingCategoryId.Special,
                     Name = "Special",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Extractors,
+                    Id = (int) BuildingCategoryId.Extractors,
                     Name = "Extractors",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Smelting,
+                    Id = (int) BuildingCategoryId.Smelting,
                     Name = "Smelting",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Manufacturing,
+                    Id = (int) BuildingCategoryId.Manufacturing,
                     Name = "Manufacturing",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.PowerGenerator,
+                    Id = (int) BuildingCategoryId.PowerGenerator,
                     Name = "Power Generators",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.PowerGrid,
+                    Id = (int) BuildingCategoryId.PowerGrid,
                     Name = "Power Grid",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.ItemConveyor,
+                    Id = (int) BuildingCategoryId.ItemConveyor,
                     Name = "Item Conveyors",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.FluidPipeline,
+                    Id = (int) BuildingCategoryId.FluidPipeline,
                     Name = "Fluid Pipelines",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Sorters,
+                    Id = (int) BuildingCategoryId.Sorters,
                     Name = "Sorters",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Vehicles,
+                    Id = (int) BuildingCategoryId.Vehicles,
                     Name = "Vehicles",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Railway,
+                    Id = (int) BuildingCategoryId.Railway,
                     Name = "Railways",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Hypertubes,
+                    Id = (int) BuildingCategoryId.Hypertubes,
                     Name = "Hypertubes",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.PioneerTransport,
+                    Id = (int) BuildingCategoryId.PioneerTransport,
                     Name = "Pioneer Transportation",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Organization,
+                    Id = (int) BuildingCategoryId.Organization,
                     Name = "Organization",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 },
                 new()
                 {
-                    Id = (int) BuildingCategoryValue.Storage,
+                    Id = (int) BuildingCategoryId.Storage,
                     Name = "Storage",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) BuildingCategoryValue.Foundations,
-                    Name = "Foundations",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) BuildingCategoryValue.Walls,
-                    Name = "Walls",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) BuildingCategoryValue.Architecture,
-                    Name = "Architecture",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 }

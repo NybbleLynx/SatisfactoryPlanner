@@ -1,6 +1,6 @@
 ﻿namespace SatisfactoryTools.FactoryPlanner.Constants.Enums
 {
-    public enum BuildingCategoryValue
+    public enum BuildingCategoryId
     {
         Special = 1,
         Extractors,
@@ -17,8 +17,5 @@
         PioneerTransport,
         Organization,
         Storage,
-        Foundations,
-        Walls,
-        Architecture,
     }
 }
