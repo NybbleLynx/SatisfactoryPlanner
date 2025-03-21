@@ -8,6 +8,8 @@ namespace SatisfactoryTools.FactoryPlanner.Repositories
         private readonly FactoryPlannerDatabaseContext dbContext;
 
         private INodePurityRepository? nodePurityRepository;
+        private IItemCategoryRepository? itemCategoryRepository;
+        private IBuildingCatergoryRepository? buildingCategoryRepository;
 
         public FactoryPlannerPersistence(FactoryPlannerDatabaseContext dbContext)
         {
@@ -20,6 +22,24 @@ namespace SatisfactoryTools.FactoryPlanner.Repositories
             get
             {
                 return nodePurityRepository ??= new NodePurityRepository(dbContext);
+            }
+        }
+
+        /// <inheritdoc />
+        public IItemCategoryRepository ItemCategoryRepository
+        {
+            get
+            {
+                return itemCategoryRepository ??= new ItemCategoryRepository(dbContext);
+            }
+        }
+
+        /// <inheritdoc />
+        public IBuildingCatergoryRepository BuildingCatergoryRepository
+        {
+            get
+            {
+                return buildingCategoryRepository ??= new BuildingCategoryRepository(dbContext);
             }
         }
 

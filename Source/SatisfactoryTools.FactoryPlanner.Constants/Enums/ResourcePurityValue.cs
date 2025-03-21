@@ -1,6 +1,6 @@
 ﻿namespace SatisfactoryTools.FactoryPlanner.Constants.Enums
 {
-    public enum ResourceNodePurityValue
+    public enum ResourcePurityValue
     {
         Impure = 1,
         Normal,

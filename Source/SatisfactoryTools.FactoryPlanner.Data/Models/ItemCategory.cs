@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SatisfactoryTools.FactoryPlanner.Data.Models
 {
-    [Table("nodePurity", Schema = "satisfactoryPlanner")]
+    [Table("itemCategory", Schema = "satisfactoryPlanner")]
     [Index(nameof(Name))]
-    public class NodePurity
+    public class ItemCategory
     {
         [Column("id")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -1,13 +1,13 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System;
 using Microsoft.EntityFrameworkCore;
 
 namespace SatisfactoryTools.FactoryPlanner.Data.Models
 {
-    [Table("nodePurity", Schema = "satisfactoryPlanner")]
+    [Table("buildingCategory", Schema = "satisfactoryPlanner")]
     [Index(nameof(Name))]
-    public class NodePurity
+    public class BuildingCategory
     {
         [Column("id")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
