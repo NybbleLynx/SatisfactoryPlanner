@@ -3,7 +3,7 @@ using SatisfactoryTools.FactoryPlanner.Data.Models;
 
 namespace SatisfactoryTools.FactoryPlanner.Repositories
 {
-    public class NodePurityRepository : INodePurityRepository
+    public class NodePurityRepository : IEnumValueRepository<NodePurity>
     {
         private readonly FactoryPlannerDatabaseContext dbContext;
 

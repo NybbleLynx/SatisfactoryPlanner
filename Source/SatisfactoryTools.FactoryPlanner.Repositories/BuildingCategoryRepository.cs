@@ -3,7 +3,7 @@ using SatisfactoryTools.FactoryPlanner.Data.Models;
 
 namespace SatisfactoryTools.FactoryPlanner.Repositories
 {
-    public class BuildingCategoryRepository : IBuildingCatergoryRepository
+    public class BuildingCategoryRepository : IEnumValueRepository<BuildingCategory>
     {
         private readonly FactoryPlannerDatabaseContext dbContext;
 

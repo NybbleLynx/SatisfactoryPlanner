@@ -1,12 +1,13 @@
 ﻿using System;
+using SatisfactoryTools.FactoryPlanner.Data.Models;
 
 namespace SatisfactoryTools.FactoryPlanner.Repositories
 {
     public interface IFactoryPlannerPersistence : IDisposable
     {
-        INodePurityRepository NodePurityRepository { get; }
-        IItemCategoryRepository ItemCategoryRepository { get; }
-        IBuildingCatergoryRepository BuildingCatergoryRepository { get; }
+        IEnumValueRepository<NodePurity> NodePurityRepository { get; }
+        IEnumValueRepository<ItemCategory> ItemCategoryRepository { get; }
+        IEnumValueRepository<BuildingCategory> BuildingCatergoryRepository { get; }
 
         public void SaveChanges();
     }
