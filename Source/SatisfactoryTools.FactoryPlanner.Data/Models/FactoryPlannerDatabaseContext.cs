@@ -243,6 +243,14 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
                     Name = "Storage",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
+                },
+                
+                new()
+                {
+                    Id = (int) BuildingCategoryId.HolidayEvent,
+                    Name = "Holiday Event",
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow
                 }
             };
             modelBuilder.Entity<BuildingCategory>().HasData(listOfBuildingCategories);

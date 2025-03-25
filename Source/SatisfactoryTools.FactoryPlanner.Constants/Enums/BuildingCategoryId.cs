@@ -17,5 +17,6 @@
         PioneerTransport,
         Organization,
         Storage,
+        HolidayEvent,
     }
 }
