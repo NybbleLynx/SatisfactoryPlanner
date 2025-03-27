@@ -10,6 +10,7 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
         public DbSet<NodePurity> NodePurities { get; set; }
         public DbSet<ItemCategory> ItemCategories { get; set; }
         public DbSet<BuildingCategory> BuildingCategories { get; set; }
+        public DbSet<Item> Items { get; set; }
 
         /// <inheritdoc />
         protected override void OnModelCreating(ModelBuilder modelBuilder)
