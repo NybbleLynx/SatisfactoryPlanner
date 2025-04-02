@@ -8,7 +8,6 @@ namespace SatisfactoryTools.FactoryPlanner.Repositories
         private readonly FactoryPlannerDatabaseContext dbContext;
 
         private IEnumValueRepository<NodePurity>? nodePurityRepository;
-        private IEnumValueRepository<ItemCategory>? itemCategoryRepository;
         private IEnumValueRepository<BuildingCategory>? buildingCategoryRepository;
 
         public FactoryPlannerPersistence(FactoryPlannerDatabaseContext dbContext)
@@ -22,15 +21,6 @@ namespace SatisfactoryTools.FactoryPlanner.Repositories
             get
             {
                 return nodePurityRepository ??= new NodePurityRepository(dbContext);
-            }
-        }
-
-        /// <inheritdoc />
-        public IEnumValueRepository<ItemCategory> ItemCategoryRepository
-        {
-            get
-            {
-                return itemCategoryRepository ??= new ItemCategoryRepository(dbContext);
             }
         }
 

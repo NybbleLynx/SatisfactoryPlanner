@@ -8,15 +8,12 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
     public class FactoryPlannerDatabaseContext : DbContext
     {
         public DbSet<NodePurity> NodePurities { get; set; }
-        public DbSet<ItemCategory> ItemCategories { get; set; }
         public DbSet<BuildingCategory> BuildingCategories { get; set; }
-        public DbSet<Item> Items { get; set; }
 
         /// <inheritdoc />
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             SeedNodePurityData(modelBuilder);
-            SeedItemCategoryData(modelBuilder);
             SeedBuildingCategoryData(modelBuilder);
 
             base.OnModelCreating(modelBuilder);
@@ -49,91 +46,6 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
                 }
             };
             modelBuilder.Entity<NodePurity>().HasData(listOfPurities);
-        }
-
-        private void SeedItemCategoryData(ModelBuilder modelBuilder)
-        {
-            var listOfItemCategories = new List<ItemCategory>
-            {
-                new()
-                {
-                    Id = (int) ItemCategoryId.RawResource,
-                    Name = "Raw Resource",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Liquid,
-                    Name = "Liquid",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Gas,
-                    Name = "Gas",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Fuel,
-                    Name = "Fuel",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Component,
-                    Name = "Component",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Equipment,
-                    Name = "Equipment",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Collectible,
-                    Name = "Collectible",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Flora,
-                    Name = "Flora",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Fauna,
-                    Name = "Fauna",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.HolidayEvent,
-                    Name = "Holiday Event",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-                new()
-                {
-                    Id = (int) ItemCategoryId.Misc,
-                    Name = "Miscellaneous",
-                    CreatedAt = DateTime.UtcNow,
-                    UpdatedAt = DateTime.UtcNow
-                },
-            };
-            modelBuilder.Entity<ItemCategory>().HasData(listOfItemCategories);
         }
 
         private void SeedBuildingCategoryData(ModelBuilder modelBuilder)
