@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SatisfactoryTools.FactoryPlanner.Constants\SatisfactoryTools.FactoryPlanner.Constants.csproj" />
+    <ProjectReference Include="..\SatisfactoryTools.FactoryPlanner.Data\SatisfactoryTools.FactoryPlanner.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Enumeration\" />
+  </ItemGroup>
+
+</Project>
