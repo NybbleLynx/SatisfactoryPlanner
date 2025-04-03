@@ -14,6 +14,7 @@
 
 using System;
 using SatisfactoryTools.FactoryPlanner.Data.Models;
+using SatisfactoryTools.FactoryPlanner.Repositories.Enumeration;
 
 namespace SatisfactoryTools.FactoryPlanner.Repositories
 {
@@ -21,9 +22,17 @@ namespace SatisfactoryTools.FactoryPlanner.Repositories
     {
         private readonly SatisfactoryPlannerDatabaseContext dbContext;
 
+        private IEnumValueRepository<NodePurity>? nodePurityRepository;
+
         public SatisfactoryPlannerPersistence(SatisfactoryPlannerDatabaseContext dbContext)
         {
             this.dbContext = dbContext;
+        }
+
+        /// <inheritdoc />
+        public IEnumValueRepository<NodePurity> NodePurityRepository
+        {
+            get => nodePurityRepository ??= new NodePurityRepository(dbContext);
         }
 
         /// <inheritdoc />

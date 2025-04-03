@@ -20,7 +20,7 @@ namespace SatisfactoryTools.FactoryPlanner.Data.Models
     {
         #region Entity DbSet Objects
 
-        
+        public DbSet<NodePurity> NodePurities { get; set; }
 
         #endregion
 

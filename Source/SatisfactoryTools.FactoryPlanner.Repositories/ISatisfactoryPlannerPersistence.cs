@@ -13,11 +13,18 @@
 #endregion
 
 using System;
+using SatisfactoryTools.FactoryPlanner.Data.Models;
+using SatisfactoryTools.FactoryPlanner.Repositories.Enumeration;
 
 namespace SatisfactoryTools.FactoryPlanner.Repositories
 {
     public interface ISatisfactoryPlannerPersistence : IDisposable
     {
+        IEnumValueRepository<NodePurity> NodePurityRepository
+        {
+            get;
+        }
+
         void SaveChanges();
     }
 }
